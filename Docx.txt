@@ -9,3 +9,599 @@ cwevfwev
 =======
 *!&!&@&&@
 
+
+
+
+
+
+
+
+
+PRactices:
+
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git merge feature
+Updating ae770d8..7b2a239
+Fast-forward
+ Docx.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (HEAD -> main, feature)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4 (origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Rameshnadar2001/demo4.git
+   ae770d8..7b2a239  main -> main
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (HEAD -> main, origin/main, origin/HEAD, feature)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (HEAD -> main, origin/main, origin/HEAD, feature)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git add .
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git commit -m "master commit"
+[main fde0513] master commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git status
+On branch feature
+nothing to commit, working tree clean
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Docx.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git add .
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git commit -m "f2 commit"
+[feature f3f8f3c] f2 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git log
+commit f3f8f3c89465ef6d807718ad2a877f19b4ac9c43 (HEAD -> feature)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:53:16 2024 +0530
+
+    f2 commit
+
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit fde05134c26b50fd5821a046c6a951d1981743a3 (HEAD -> main)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:51:46 2024 +0530
+
+    master commit
+
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+commit f7b4ed9c08b4d104eba50289d1ae37a96fe70b35
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 06:53:09 2024 +0530
+
+    1
+
+commit 79ffac74d8bf185f329115d49b99cfeb9e46f4d6
+Author: Rameshnadar2001 <99281431+Rameshnadar2001@users.noreply.github.com>
+Date:   Wed May 22 06:51:24 2024 +0530
+
+    Initial commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git merge feature
+Merge made by the 'ort' strategy.
+ Docx.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit a222d94ddbc1491b9f6afca70e1e1d58256166a6 (HEAD -> main)
+Merge: fde0513 f3f8f3c
+commit a222d94ddbc1491b9f6afca70e1e1d58256166a6 (HEAD -> main)
+commit a222d94ddbc1491b9f6afca70e1e1d58256166a6 (HEAD -> main)
+Merge: fde0513 f3f8f3c
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:54:33 2024 +0530
+
+    Merge branch 'feature'
+
+commit f3f8f3c89465ef6d807718ad2a877f19b4ac9c43 (feature)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:53:16 2024 +0530
+
+    f2 commit
+
+commit fde05134c26b50fd5821a046c6a951d1981743a3
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:51:46 2024 +0530
+
+    master commit
+
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git log
+commit a222d94ddbc1491b9f6afca70e1e1d58256166a6 (HEAD -> main)
+Merge: fde0513 f3f8f3c
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:54:33 2024 +0530
+
+    Merge branch 'feature'
+
+commit f3f8f3c89465ef6d807718ad2a877f19b4ac9c43 (feature)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:53:16 2024 +0530
+
+    f2 commit
+
+commit fde05134c26b50fd5821a046c6a951d1981743a3
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:51:46 2024 +0530
+
+    master commit
+
+commit 7b2a239e428ac97601c0605838e3d539d6bda9e9 (origin/main, origin/HEAD)
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 08:34:24 2024 +0530
+
+    f1
+
+commit ae770d8e2500ae140d59a2902b5c5cef61c3ffd4
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:37:09 2024 +0530
+
+    Reapply "2"
+
+    This reverts commit f7bdc5316d53a07db9b659a7b937d116c2616785.
+
+commit f7bdc5316d53a07db9b659a7b937d116c2616785
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:33:16 2024 +0530
+
+    Revert "2"
+    I am sorry!"
+
+    This reverts commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104.
+
+commit ec8a2085b0b3d4feb17db4dc34308ce44ea81104
+Author: Ramesh Nadar <ramesh_nadar@epam.com>
+Date:   Wed May 22 07:15:05 2024 +0530
+
+    2
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ gitk&
+[1] 2119
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git add .
+[1]+  Done                    gitk
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git commit -m "m commit"
+[main 498491d] m commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Docx.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git add .
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git commit -m "m commit"
+[feature f5d7d18] m commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git merge feature
+Auto-merging Docx.txt
+CONFLICT (content): Merge conflict in Docx.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main|MERGING)
+$ git merge feature
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main|MERGING)
+$ git add .
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main|MERGING)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   Docx.txt
+
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main|MERGING)
+$ git commit -m "resolved commit"
+[main 3787f94] resolved commit
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ gitk&
+[1] 2189
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git show branch
+fatal: ambiguous argument 'branch': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ git branch --all
+  feature
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$ ^C
+
+EPAM+ramesh_nadar@EP-4Q9K8G3 MINGW64 ~/Documents/Data/demo4 (main)
+$
